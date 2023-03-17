@@ -26,7 +26,7 @@ package ru.job4j.converter;
             float in1 = 140;
             float axpected = 2.3333333F;
             float out1 = Converter.rubleToDollar(in1);
-            boolean passed1 = expected == out1;
+            boolean passed10 = expected == out1;
             System.out.println("140 rubles are 2.3333333. Test result : " + passed1);
         }
     }
