@@ -19,7 +19,7 @@ public class ConverterTest {
         float in = 140;
         float expected = 2.3333333F;
         float out = Converter.rubleToDollar(in);
-        float eps = 0.0001F;
+        float eps = 0.00001F;
         Assert.assertEquals(expected, out, eps);
     }
 }
