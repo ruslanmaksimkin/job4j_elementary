@@ -9,7 +9,13 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
+    public static double subAndDivision(double first, double second) {
+        return subtraction(first, second)
+                + division(first, second);
+    }
+
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат расчета равен: " + subAndDivision(55, 10));
     }
 }
