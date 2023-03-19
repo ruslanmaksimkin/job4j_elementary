@@ -8,15 +8,11 @@ public class AlertDivByZero {
 
         if (number < 0) {
             System.out.println("This is negative number.");
-            if (number > 0 ) {
-                System.out.println("True.");
-            }
-        } else {
-            if (number > 0 ) {
-                System.out.println("True.");
-            }
         }
 
+        if (number > 0 ) {
+            System.out.println("True.");
+        }
     }
 
     public static void main(String[] args) {
