@@ -36,7 +36,7 @@ public class SqAreaTestTest {
     public void whenP41K17Square329dot13() {
         double expected = 329.13;
         int p = 41;
-        double k = 170;
+        double k = 17;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
     }
