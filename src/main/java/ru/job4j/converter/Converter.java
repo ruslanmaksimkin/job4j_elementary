@@ -8,7 +8,7 @@ public class Converter {
     }
 
     public static float rubleToDollar(float value) {
-        return value / 60;
+        return value / 65;
     }
 
     public static void main(String[] args) {
@@ -23,9 +23,9 @@ public class Converter {
         float dollar = Converter.rubleToDollar(3850);
         System.out.println("3850 rubles are " + dollar + " dollar.");
         in = 3850;
-        expected = 64.166664F;
+        expected = 59.23077F;
         out = Converter.rubleToDollar(in);
         passed = expected == out;
-        System.out.println("3850 rubles are 64.166664. Test result " + passed);
+        System.out.println("3850 rubles are 59.23077. Test result " + passed);
     }
 }
