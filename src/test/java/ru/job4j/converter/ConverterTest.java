@@ -17,7 +17,7 @@ public class ConverterTest {
     }
 
     @Test
-    public void rubleToDollar() {
+    public void whenConvert3850RblThen64dot166Dlr() {
         float in = 3850;
         float expected = 64.1666664F;
         float out = Converter.rubleToDollar(in);
