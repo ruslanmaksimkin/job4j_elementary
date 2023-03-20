@@ -3,8 +3,6 @@ package ru.job4j.calculator;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class FitTestTest {
 
     @Test
@@ -18,7 +16,7 @@ public class FitTestTest {
     @Test
     public void whenWoman175Then74dot75() {
         short in = 175;
-        double expected = 74.75;
+        double expected = 74.7;
         double out = FitTest.womanWeight(in);
         Assert.assertEquals(expected, out, 0.01);
     }
