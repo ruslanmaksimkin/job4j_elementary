@@ -34,7 +34,7 @@ public class SqAreaTest {
 
     @Test
     public void whenP41K17Square22dot05() {
-        float expected = 22.05F;
+        float expected = 25.05F;
         int p = 41;
         double k = 17;
         double out = SqArea.square(p, k);
