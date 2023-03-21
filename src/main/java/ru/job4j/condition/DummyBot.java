@@ -4,6 +4,7 @@ public class DummyBot {
 
     public static String answer(String question) {
         String rsl = "I don't know. Please, ask another question.";
+
         if ("Hi, Bot.".equals(question)) {
             rsl = "Hi, SmartAss.";
         } else if ("Bye.".equals(question)) {
@@ -16,6 +17,8 @@ public class DummyBot {
         String rsl = DummyBot.answer("Hi, Bot.");
         System.out.println(rsl);
         rsl = DummyBot.answer("Bye.");
+        System.out.println(rsl);
+        rsl = DummyBot.answer("Can you add two plus two?");
         System.out.println(rsl);
     }
 }
