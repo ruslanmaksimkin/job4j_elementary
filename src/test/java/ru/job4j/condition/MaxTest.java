@@ -17,20 +17,20 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax500To300Then500() {
-        int left = 500;
-        int right = 300;
+    public void whenMax23To17Then23() {
+        int left = 23;
+        int right = 17;
         int result = Max.max(left, right);
-        int expected = 500;
+        int expected = 23;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenMax777To777Then777() {
-        int left = 777;
-        int right = 777;
+    public void whenMax23To23Then23() {
+        int left = 23;
+        int right = 23;
         int result = Max.max(left, right);
-        int expected = 777;
+        int expected = 23;
         assertThat(result).isEqualTo(expected);
     }
 }
