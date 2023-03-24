@@ -1,7 +1,5 @@
 package ru.job4j.condition;
 
-import java.sql.SQLOutput;
-
 public class MultipleSwitchWeek {
     public static int numberOfDay(String name) {
         return switch (name) {
