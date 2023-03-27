@@ -5,11 +5,7 @@ public class CheckPrimeNumber {
         boolean prime = number > 1;
         for (int index = 2; index < number; index++) {
             if (number % index == 0) {
-                System.out.println("N = " + number + ". Not possible.");
                 prime = false;
-                break;
-            } else {
-                System.out.println("N = " + number + ". Success.");
                 break;
             }
         }
@@ -17,13 +13,8 @@ public class CheckPrimeNumber {
     }
 
     public static void main(String[] args) {
-        check(5);
-        check(4);
-        check(1);
-        check(3);
-        check(23);
-        check(83);
-        check(84);
-
+        System.out.println(CheckPrimeNumber.check(5));
+        System.out.println(CheckPrimeNumber.check(4));
+        System.out.println(CheckPrimeNumber.check(1));
     }
 }
