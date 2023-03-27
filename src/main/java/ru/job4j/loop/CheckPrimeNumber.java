@@ -2,21 +2,16 @@ package ru.job4j.loop;
 
 public class CheckPrimeNumber {
     public static boolean check(int number) {
-        boolean prime = true;
+        boolean prime = number > 1;
         int hold = 0;
-        for (int index = 0; index <= number; index++) {
+        for (int index = 2; index < number; index++) {
             hold += index;
-            if (hold == number) {
-                System.out.println("N = " + number + ". Success.");
-                break;
-            } else if (number % 5 == 0) {
-                System.out.println("N = " + number + ". Success.");
-                break;
-            } else if (hold > number) {
+            if (number % index == 0) {
                 System.out.println("N = " + number + ". Not possible.");
+                prime = false;
                 break;
-            } else if (number % 2 == 0) {
-                System.out.println("N = " + number + ". Not possible.");
+            } else {
+                System.out.println("N = " + number + ". Success.");
                 break;
             }
         }
@@ -27,5 +22,10 @@ public class CheckPrimeNumber {
         check(5);
         check(4);
         check(1);
+        check(3);
+        check(23);
+        check(83);
+        check(84);
+
     }
 }
