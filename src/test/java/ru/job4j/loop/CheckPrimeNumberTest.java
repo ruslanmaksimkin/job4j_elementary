@@ -21,7 +21,7 @@ public class CheckPrimeNumberTest {
 
     @Test
     public void check1() {
-        int number = 1;
+        int number = 10;
         boolean prime = CheckPrimeNumber.check(number);
         assertThat(prime).isFalse();
     }
